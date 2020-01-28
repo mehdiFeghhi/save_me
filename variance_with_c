@@ -1,0 +1,28 @@
+# include <stdio.h>
+int variance(int arr[] , int number);
+int pow(int one , int two);
+int main(){
+    int arr[4] = {41,32,45,6};
+    int c = variance(arr,4);
+    printf("%c\n",c);
+    return 0;
+}
+int variance(int  arr[] , int number){
+    int i = 0 ;
+    int all = 0 ;
+    int average ;
+    int varinace ;
+    for (i ; i <= number ; i++){
+        all += arr[i] ;
+    }
+    average = all /(number +1);
+    all = 0 ;
+    for (i = 0 ; i <= number ; i++){
+        all += pow((arr[i] - average), 2);
+    }
+    varinace
+}
+int pow(int one , int two){
+
+
+
